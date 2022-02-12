@@ -1,0 +1,19 @@
+{
+  "name": "mtnl_frs_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro-bot"
+  },
+  "author": "Shresth Jain",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "dotenv": "^16.0.0",
+    "micro-bot": "^2.5.3",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "telegraf": "^3.38.0"
+  }
+}
