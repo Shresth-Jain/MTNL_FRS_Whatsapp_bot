@@ -114,7 +114,7 @@ async function startApp(){
     // run this function every 10 minutes = 6000 milliseconds
     var interval=setInterval(()=>{
     // if time is between 1000Hours to 1500Hours then run the command at regular interval of 10 minutes
-        if(currHour>=10 && currHour<=23){   
+        if(currHour>=10 && currHour<=15){   
             startApp();
         }
         else if(landlineSent.size>0){
