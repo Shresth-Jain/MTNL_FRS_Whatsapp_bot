@@ -5,11 +5,11 @@ require('dotenv').config();
 
 // for telegram bot
 
-// const Telegraf = require('telegraf');
-const { Composer } = require('micro-bot')
+const Telegraf = require('telegraf');
+// const { Composer } = require('micro-bot')
 
-// const bot = new Telegraf(process.env.BOT_TOKEN);
-const bot = new Composer()
+const bot = new Telegraf(process.env.BOT_TOKEN);
+// const bot = new Composer()
 
 
 // ******************************************************************************************
@@ -114,7 +114,7 @@ async function startApp(){
     // run this function every 10 minutes = 6000 milliseconds
     var interval=setInterval(()=>{
     // if time is between 1000Hours to 1500Hours then run the command at regular interval of 10 minutes
-        if(currHour>=10 && currHour<=20){   
+        if(currHour>=10 && currHour<=23){   
             startApp();
         }
         else if(landlineSent.size>0){
@@ -123,7 +123,7 @@ async function startApp(){
     },6000);
 // }
 
-// bot.launch();
-module.exports = bot
+bot.launch();
+// module.exports = bot
 
 
