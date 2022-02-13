@@ -11,11 +11,8 @@ const Telegraf = require('telegraf');
 const bot = new Telegraf(process.env.BOT_TOKEN);
 // const bot = new Composer()
 
-
 // ******************************************************************************************
 const landlineSent=[];
-const date_ob = new Date();
-const currHour=date_ob.getHours();
 
 const site="http://intranetd.mtnldelhi.in:7778/j2ee/hrd/pend_list.jsp?category=WEST&subcategory=RG";
 
@@ -111,18 +108,25 @@ async function startApp(){
         console.log('Error happened while connecting to the DB: ', e.message)
     }   
  }
+
+const date_ob = new Date();
+const currUTCHour=date_ob.getUTCHours();
+const currUTCMin=date_ob.getUTCMinutes();
+
+
     // run this function every 10 minutes = 10*60*1000 milliseconds
 var interval=setInterval(()=>{
     // if time is between 1000Hours to 1500Hours then run the command at regular interval of 10 minutes
-        if(currHour>=10 && currHour<=15){   
-            console.log("Starting the application at: ",currHour);
-            startApp();
+    //  10am to 3pm IST  is 4:30am to 9:30pm UTC
+        if((currUTCHour>=5 && currUTCHour<=9) || (currUTCHour==4 && currUTCMin>=30) || (currUTCHour==9 && currUTCMin<=30)){   
+            console.log("Starting the application at: ",currUTCHour);
+            // startApp();
         }
         else if(landlineSent.size>0){
             console.log("Working Hours are over!");
             landlineSent=[];
         }
-        console.log("Memory Clean complete. Working Hours are over!");
+        else console.log("Memory Clean complete. Working Hours are over!");
 
     },10*60*1000);
 // }
