@@ -108,19 +108,23 @@ async function startApp(){
     //    console.log(date_ob.getHours());
 
     }catch(e) {
-        console.log('Error happend while connecting to the DB: ', e.message)
+        console.log('Error happened while connecting to the DB: ', e.message)
     }   
  }
-    // run this function every 10 minutes = 6000 milliseconds
-    var interval=setInterval(()=>{
+    // run this function every 10 minutes = 10*60*1000 milliseconds
+var interval=setInterval(()=>{
     // if time is between 1000Hours to 1500Hours then run the command at regular interval of 10 minutes
         if(currHour>=10 && currHour<=15){   
+            console.log("Starting the application at: ",currHour);
             startApp();
         }
         else if(landlineSent.size>0){
+            console.log("Working Hours are over!");
             landlineSent=[];
         }
-    },6000);
+        console.log("Memory Clean complete. Working Hours are over!");
+
+    },10*60*1000);
 // }
 
 bot.launch();
