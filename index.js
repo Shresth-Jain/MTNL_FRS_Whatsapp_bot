@@ -49,7 +49,7 @@ async function startApp(){
                     var opts = {
                         "parse_mode": 'HTML'
                       };
-                    let message=`TELNO:<b>${TELNO}</b>\nMDFNO:<b>${MDFNO}</b>\nADD:<b>${ADD}</b>\n\nJESEC:<i>${JESEC}</i>\nNAME:<i>${NAME}</i>\nCONTACT:<i>${CONTACT}</i>\nCOMD:<i>${COMD}</i>`;
+                    let message=`TELNO:<b>${TELNO}</b>\nMDFNO:<b>${MDFNO}</b>\nADD:<b>${ADD}</b>\n\nJESEC:<i>${JESEC}</i>\nNAME:<i>${NAME}</i>\nCONTACT:<i>${CONTACT}</i>\nCOMD:<i>${COMD}</i>\n***********`;
                     bot.telegram.sendMessage(process.env.GROUP_ID_121,message,opts);
                     landlineSent.push(TELNO);
                 }
@@ -65,7 +65,7 @@ async function startApp(){
                     var opts = {
                         "parse_mode": 'HTML'
                       };
-                    let message=`TELNO:<b>${TELNO}</b>\nMDFNO:<b>${MDFNO}</b>\nADD:<b>${ADD}</b>\n\nJESEC:<i>${JESEC}</i>\nNAME:<i>${NAME}</i>\nCONTACT:<i>${CONTACT}</i>\nCOMD:<i>${COMD}</i>`;
+                    let message=`TELNO:<b>${TELNO}</b>\nMDFNO:<b>${MDFNO}</b>\nADD:<b>${ADD}</b>\n\nJESEC:<i>${JESEC}</i>\nNAME:<i>${NAME}</i>\nCONTACT:<i>${CONTACT}</i>\nCOMD:<i>${COMD}</i>\n***********`;
                     bot.telegram.sendMessage(process.env.GROUP_ID_141,message,opts);
                     landlineSent.push(TELNO);
                 }
@@ -80,7 +80,7 @@ async function startApp(){
                     var opts = {
                         "parse_mode": 'HTML'
                       };
-                    let message=`TELNO:<b>${TELNO}</b>\nMDFNO:<b>${MDFNO}</b>\nADD:<b>${ADD}</b>\n\nJESEC:<i>${JESEC}</i>\nNAME:<i>${NAME}</i>\nCONTACT:<i>${CONTACT}</i>\nCOMD:<i>${COMD}</i>`;
+                    let message=`TELNO:<b>${TELNO}</b>\nMDFNO:<b>${MDFNO}</b>\nADD:<b>${ADD}</b>\n\nJESEC:<i>${JESEC}</i>\nNAME:<i>${NAME}</i>\nCONTACT:<i>${CONTACT}</i>\nCOMD:<i>${COMD}</i>\n***********`;
                     bot.telegram.sendMessage(process.env.GROUP_ID_151,message,opts);
                     landlineSent.push(TELNO);
                 }
@@ -96,7 +96,7 @@ async function startApp(){
                     var opts = {
                         "parse_mode": 'HTML'
                       };
-                    let message=`TELNO:<b>${TELNO}</b>\nMDFNO:<b>${MDFNO}</b>\nADD:<b>${ADD}</b>\n\nJESEC:<i>${JESEC}</i>\nNAME:<i>${NAME}</i>\nCONTACT:<i>${CONTACT}</i>\nCOMD:<i>${COMD}</i>`;
+                    let message=`TELNO:<b>${TELNO}</b>\nMDFNO:<b>${MDFNO}</b>\nADD:<b>${ADD}</b>\n\nJESEC:<i>${JESEC}</i>\nNAME:<i>${NAME}</i>\nCONTACT:<i>${CONTACT}</i>\nCOMD:<i>${COMD}</i>\n***********`;
                     bot.telegram.sendMessage(process.env.GROUP_ID_161,message,opts);
                     landlineSent.push(TELNO);
                 }
