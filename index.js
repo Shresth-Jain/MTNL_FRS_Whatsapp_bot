@@ -131,6 +131,8 @@ var interval=setInterval(()=>{
     },10*60*1000);
 // }
 
+bot.start((ctx) => ctx.reply('Bot has started!'));
+
 bot.launch();
 // module.exports = bot
 
