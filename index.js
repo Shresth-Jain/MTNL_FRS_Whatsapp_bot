@@ -49,7 +49,7 @@ async function startApp(){
                     var opts = {
                         "parse_mode": 'HTML'
                       };
-                    let message=`TELNO:<b>${TELNO}</b>\nMDFNO:<b>${MDFNO}</b>\nADD:<b>${ADD}</b>\n\nJESEC:<i>${JESEC}</i>\nNAME:<i>${NAME}</i>\nCONTACT:<i>${CONTACT}</i>\nCOMD:<i>${COMD}</i>\n***********`;
+                    let message=`TELNO:<b>${TELNO}</b>\nMDFNO:<b>${MDFNO}</b>\nADD:<b>${ADD}</b>\n\nJESEC:<i>${JESEC}</i>\nNAME:<i>${NAME}</i>\nCONTACT:<i>${CONTACT}</i>\nCOMD:<i>${COMD}</i>\n**********`;
                     bot.telegram.sendMessage(process.env.GROUP_ID_121,message,opts);
                     landlineSent.push(TELNO);
                 }
@@ -82,6 +82,7 @@ async function startApp(){
                       };
                     let message=`TELNO:<b>${TELNO}</b>\nMDFNO:<b>${MDFNO}</b>\nADD:<b>${ADD}</b>\n\nJESEC:<i>${JESEC}</i>\nNAME:<i>${NAME}</i>\nCONTACT:<i>${CONTACT}</i>\nCOMD:<i>${COMD}</i>\n***********`;
                     bot.telegram.sendMessage(process.env.GROUP_ID_151,message,opts);
+                    console.log("done");
                     landlineSent.push(TELNO);
                 }
             }
@@ -120,7 +121,7 @@ var interval=setInterval(()=>{
     //  10am to 3pm IST  is 4:30am to 9:30pm UTC
         if((currUTCHour>=5 && currUTCHour<=9) || (currUTCHour==4 && currUTCMin>=30) || (currUTCHour==9 && currUTCMin<=30)){   
             console.log("Starting the application at: ",currUTCHour);
-            // startApp();
+            startApp();
         }
         else if(landlineSent.size>0){
             console.log("Working Hours are over!");
@@ -128,7 +129,7 @@ var interval=setInterval(()=>{
         }
         else console.log("Memory Clean complete. Working Hours are over!");
 
-    },10*60*1000);
+    },60*10*1000);
 // }
 
 bot.start((ctx) => ctx.reply('Bot has started!'));
