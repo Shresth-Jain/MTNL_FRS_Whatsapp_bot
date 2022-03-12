@@ -112,7 +112,7 @@ async function startApp(){
 
 
 console.log("Working Hours: 9:30 to 15:00 IST -> 4:00 - 9:30 UTC");
-
+startApp();
     // run this function every 10 minutes = 10*60*1000 milliseconds
 var interval=setInterval(()=>{
     const date_ob = new Date();
@@ -122,7 +122,7 @@ var interval=setInterval(()=>{
     //  10am to 3pm IST  is 4:30am to 9:30pm UTC
         if((currUTCHour>=4 && currUTCHour<9) || (currUTCHour==9 && currUTCMin<=30)){   
             console.log("["+currUTCHour+":"+currUTCMin+"] "+"Starting the application at: ",currUTCHour);
-            // startApp();
+            startApp();
         }
         else if(landlineSent.size>0){
             console.log("["+currUTCHour+":"+currUTCMin+"] "+"Working Hours are over! Cleaning the memory");
