@@ -12,35 +12,36 @@
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-</div> -->
+</div> --> 
 
 ---
 
+
 <p align="center"> 
-MTNL_FRS_BOT can assist an MTNL employee to get a region wised distributed summarised details of the faults/complaints fetched directly from the server reports.
+MTNL_FRS_BOT can assist an MTNL officer to get a region wised distributed summarised details of the faults/complaints fetched directly from the server reports.
     <br> 
 </p>
 
-## 📝 Table of Contents
+<!-- ## 📝 Table of Contents --> 
 
 <!-- - [About](#about) -->
-- [Getting Started](#getting_started)
+<!-- - [Getting Started](#getting_started)
 - [Deployment](#deployment)
 - [Usage](#usage)
 - [Built Using](#built_using)
 - [TODO](../TODO.md)
 - [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+- [Acknowledgments](#acknowledgement) -->
 
 <!-- ## 🧐 About <a name = "about"></a>
 
 Write about 1-2 paragraphs describing the purpose of your project. -->
-
+<!-- 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system. -->
+<!-- 
 ### Prerequisites
 
 What things you need to install the software and how to install them.
@@ -66,7 +67,7 @@ And repeat
 until finished
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
+End with an example of getting some data out of the system or using it for a little demo. -->
 
 <!-- ## 🔧 Running the tests <a name = "tests"></a>
 
@@ -79,7 +80,7 @@ Explain what these tests test and why
 ```
 Give an example
 ``` -->
-
+<!-- 
 ### And coding style tests
 
 Explain what these tests test and why
@@ -94,7 +95,7 @@ Add notes about how to use the system.
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
-Deployment is just a 1 line command 
+Deployment is just a 1 line command  -->
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
