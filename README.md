@@ -99,11 +99,11 @@ Add notes about how to use the system.
 ## 🚀 Deployment <a name = "deployment"></a>
 
 Deployment is just a 1 line command  -->
-## Usage steps
+## Usage
 
 Step 1: Clone the Repo.
 
-Step 2: Run ```npm install```## Install
+Step 2: Run ```npm install```## Install.
 .
 Step 3: Run ```node index.js```.
 
