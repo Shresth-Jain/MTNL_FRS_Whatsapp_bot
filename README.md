@@ -99,12 +99,13 @@ Add notes about how to use the system.
 ## 🚀 Deployment <a name = "deployment"></a>
 
 Deployment is just a 1 line command  -->
+
 ## Usage
 
 Step 1: Clone the Repo.
 
 Step 2: Run ```npm install```.
-.
+
 Step 3: Run ```node index.js```.
 
 Upon execution, the faults are sent to the designated Telegram account as per the following format.
