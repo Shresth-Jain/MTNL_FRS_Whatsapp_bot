@@ -103,7 +103,7 @@ Deployment is just a 1 line command  -->
 
 Step 1: Clone the Repo.
 
-Step 2: Run ```npm install``.
+Step 2: Run ```npm install```.
 .
 Step 3: Run ```node index.js```.
 
