@@ -102,17 +102,13 @@ Deployment is just a 1 line command  -->
 ## Usage steps
 
 Step 1: Clone the Repo.
-Step 2: Run ```npm install```## Install
 
-This project uses [python](https://www.python.org/). Go check them out if you don't have them locally installed.
-<!-- 
-```sh
-$ npm install --global standard-readme-spec
-``` -->
+Step 2: Run ```npm install```## Install
 .
 Step 3: Run ```node index.js```.
 
 Upon execution, the faults are sent to the designated Telegram account as per the following format.
+
 <img src="https://user-images.githubusercontent.com/62640364/180863005-793b1658-10e6-4f17-aabf-3a59c0e9146a.png" width="300" height="200">
 
 ## ⛏️ Built Using <a name = "built_using"></a>
